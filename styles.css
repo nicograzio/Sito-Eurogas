@@ -196,6 +196,7 @@ textarea {
   display: flex;
   gap: 16px;
   font-size: 0.9rem;
+  align-items: center;
 }
 
 .button {
@@ -258,6 +259,24 @@ textarea {
   font-weight: 600;
   cursor: pointer;
   padding: 0;
+}
+
+.policy h1 {
+  margin-top: 0;
+}
+
+.policy h2 {
+  margin-top: 32px;
+}
+
+.policy ul {
+  padding-left: 20px;
+}
+
+.policy-updated {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: #5c677d;
 }
 
 .cookie-modal {

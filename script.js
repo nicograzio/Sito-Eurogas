@@ -7,6 +7,7 @@ const cancelButton = document.getElementById("cookie-cancel");
 const saveButton = document.getElementById("cookie-save");
 const analyticsToggle = document.getElementById("cookie-analytics");
 const marketingToggle = document.getElementById("cookie-marketing");
+const manageButton = document.getElementById("cookie-manage");
 
 const STORAGE_KEY = "cookie-preferences";
 
@@ -81,6 +82,12 @@ rejectButton.addEventListener("click", () => {
 settingsButton.addEventListener("click", () => {
   openModal();
 });
+
+if (manageButton) {
+  manageButton.addEventListener("click", () => {
+    openModal();
+  });
+}
 
 cancelButton.addEventListener("click", () => {
   closeModal();
